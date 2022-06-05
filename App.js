@@ -8,6 +8,7 @@ import FriendsScreen from './FriendsScreen';
 import FriendsScreen2 from './FriendsScreen2';
 
 const Stack = createStackNavigator();
+console.disableYellowBox = true;  //to avoid warning
 
 class App extends React.Component {
   render() {
@@ -15,15 +16,15 @@ class App extends React.Component {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="Home"
+            name="Welcome !"
             component={HomeScreen}
           />
           <Stack.Screen
-            name="Friends"
+            name="Chatbot"
             component={FriendsScreen}
           />
           <Stack.Screen
-            name="Friends2"
+            name="Scann your Product CPU"
             component={FriendsScreen2}
           />
         </Stack.Navigator>
